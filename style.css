@@ -1,0 +1,505 @@
+
+
+/*
+	Standard CSS Reset
+	This is used to account for differences in browsers.
+	Without a reset stylesheet there could be differences
+	between browsers when loading your html website.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* fin del reset css */
+
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.encabezado{
+    background: #fcfcfc;
+    opacity: .97;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 96%;
+    margin: 0 auto;
+    border-bottom: 1px solid #000000;
+    z-index: 10;
+}
+
+.encabezado div{
+    height: 50px;
+}
+
+.encabezado ul{
+    display: flex;
+}
+
+.encabezado ul a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.encabezado i{
+    font-size: 1.45em;
+    color: #111;
+    transition: .3s;
+}
+
+.encabezado i:hover{
+    color: #fa0;
+    transform: scale(2);
+}
+
+
+
+.encabezado__menu ul a li{
+    font-size: 1.5em;
+    color: #111;
+    transition: .3s;
+}
+
+.encabezado__menu ul a li:hover{
+    color: #fa0;
+    transform: scale(1.5);
+}
+
+/* titulo */
+
+.presentacion{
+    text-align: center;
+    width: 300px;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.presentacion h1{
+    font-size: 3em;
+    padding: 5px;
+}
+
+.presentacion a{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.presentacion a i{
+    color:  #fa0;
+    font-size: 3.8em;
+    transform: rotate(15deg);
+    transition: .3s;
+}
+
+.presentacion a i:hover{
+    transform: rotate(0deg);
+}
+
+/* imagenes presentacion */
+
+
+.entradas__principales{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.entradas__principales img{
+    transition: 1s;
+}
+
+.entradas__principales img:hover{
+    transform: scale(1.35);
+}
+
+/* posiciono botones */
+
+.entradas__principales a{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #111;
+    height: 38px;
+    width: 118px;
+    text-align: center;
+    transition: .3s;
+}
+
+.entradas__principales a:hover{
+    opacity: .8;
+}
+
+.entradas__principales a li{
+    padding: 7px;
+    font-size: 1.25em;
+}
+
+.entradas__principales-1-cervezas{
+    top: 860px;
+    left: 160px;
+}
+
+.entradas__principales-2-ofertas{
+    top: 530px;
+    left: 600px;
+}
+
+.entradas__principales-2-recomendadas{
+    top: 860px;
+    left: 600px;
+}
+
+.entradas__principales-1{
+    height: 648px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.entradas__principales-1 img{
+    height: 648px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.entradas__principales-2 img{
+    height: 316px;
+    width: 580px;
+    object-fit: cover;
+}
+
+.entradas__principales-2 div{
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+/* Productos mas vendidos*/
+
+/* titulo populares */
+
+.populares__presentacion{
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    background: #fdfdfd;
+}
+
+.populares__presentacion h2{
+    font-size: 1.7em;
+}
+
+.populares__presentacion a{
+    color: #000000;
+}
+
+.populares__presentacion a i{
+    font-size: 1.3em;
+    margin-top: 15px;
+    transition: .2s;
+}
+
+.populares__presentacion a i:hover{
+    color: #fa0;
+}
+
+.populares__presentacion h3{
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+
+/* contenido populares */
+
+
+.populares__contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.populares__contenido div{
+    margin: 12px;
+}
+
+.populares__contenido img{
+    height: 275px;
+    width: 240px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.populares__contenido img:hover{
+    transform: scale(.95);
+}
+
+
+
+
+.populares__contenido h2{
+    font-size: 1.3em;
+    margin-top: 4px;
+    color: #000000;
+    transition: .2s;
+    width: 150px;
+}
+
+
+.populares__contenido h2:hover{
+    color: #fa0;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+.populares__contenido p{
+    font-size: 1.15em;
+    margin-top: 9px;
+    color: #000000;
+}
+
+
+/* banner */
+
+.entradas__secundarias{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.entradas__secundarias img{
+    width: 1040px;
+    height: 200px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.entradas__secundarias img:hover{
+    transform: scale(1.35);
+}
+
+
+
+.entradas__secundarias div{
+    width: 1040px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+
+.entradas__secundarias a{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #111;
+    height: 38px;
+    width: 190px;
+    text-align: center;
+    transition: .3s;
+}
+
+.entradas__secundarias a:hover{
+    opacity: .8;
+}
+
+.entradas__secundarias a li{
+    padding: 7px;
+    font-size: 1.25em;
+}
+
+.entradas__secundarias-boton{
+    top: 1945px;
+    left: 160px;
+}
+
+.entradas__secundarias-boton-combos{
+    top: 3050px;
+    left: 160px;
+}
+
+
+/* footer */
+
+
+
+.info{
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    background: #fefefe;
+}
+
+.info a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.info h4{
+    text-align: center;
+    margin-top: 12px;
+    font-size: 1.3em;
+    color: #000000;
+    font-weight: 1000;
+}
+
+.info i{
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.info div{
+    width: 350px;
+    height: 230px;
+}
+
+.info div ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.info div ul a{
+    text-align: center;
+    margin: 10px 0;
+    transition: .3s;
+}
+
+.info div ul a:hover{
+    color: #fa0;
+}
+
+
+
+.info__datos div{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.info__datos i,li{
+    display: inline-block;
+}
+
+.info__datos i{
+    color: #000000;
+    font-size: 1.3em;
+    margin-right: 10px;
+    transition: .3s;
+}
+
+.info__datos i:hover{
+    color: #fa0;
+}
+
+
+.info__datos a{
+    margin: 10px 2px;
+    height: 25px;
+    text-align: center;
+    display: inline-block;
+    transition: .3s;
+}
+
+.info__datos a:hover{
+    color: #fa0;
+}
+
+.copyright{
+    margin: 0;
+    padding: 2px;
+    background: #f0f0f0;
+    position: relative;
+    z-index: 1;
+    font-weight: 1000;
+    opacity: .5;
+}
+
+.copyright h4{
+    margin: 12px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
